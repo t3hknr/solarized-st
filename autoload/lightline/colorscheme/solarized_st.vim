@@ -25,19 +25,11 @@ if exists('g:lightline')
 	let s:cyan    = ['#2aa198',  '37']
 	let s:green   = ['#859900',  '64']
 
-	if &background == "light"
-		let s:temp03      = s:base03
-		let s:temp02      = s:base02
-		let s:temp01      = s:base01
-		let s:temp00      = s:base00
-		let s:base03      = s:base3
-		let s:base02      = s:base2
-		let s:base01      = s:base1
-		let s:base00      = s:base0
-		let s:base0       = s:temp00
-		let s:base1       = s:temp01
-		let s:base2       = s:temp02
-		let s:base3       = s:temp03
+	if lightline#colorscheme#background() ==# 'light'
+		let [ s:base03, s:base3 ] = [ s:base3, s:base03 ]
+		let [ s:base02, s:base2 ] = [ s:base2, s:base02 ]
+		let [ s:base01, s:base1 ] = [ s:base1, s:base01 ]
+		let [ s:base00, s:base0 ] = [ s:base0, s:base00 ]
 	endif
 
 	let s:p.normal.left	= [[s:base03, s:blue   ], [s:base03, s:base00]]
