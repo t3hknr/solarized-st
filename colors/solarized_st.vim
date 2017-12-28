@@ -63,10 +63,12 @@ if &background == "light"
     let [ s:base02, s:base2 ] = [ s:base2, s:base02 ]
     let [ s:base01, s:base1 ] = [ s:base1, s:base01 ]
     let [ s:base00, s:base0 ] = [ s:base0, s:base00 ]
+    let s:back        = s:base03
     let [ s:g_base03, s:g_base3 ] = [ s:g_base3, s:g_base03 ]
     let [ s:g_base02, s:g_base2 ] = [ s:g_base2, s:g_base02 ]
     let [ s:g_base01, s:g_base1 ] = [ s:g_base1, s:g_base01 ]
     let [ s:g_base00, s:g_base0 ] = [ s:g_base0, s:g_base00 ]
+    let s:g_back      = s:g_base03
 endif
 
 let s:b           = ",bold"
