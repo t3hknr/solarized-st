@@ -164,6 +164,10 @@ exe "hi! Ignore"         .s:fmt_none   .s:fg_none   .s:bg_none
 exe "hi! Error"          .s:fmt_bold   .s:fg_red    .s:bg_none
 exe "hi! Todo"           .s:fmt_bold   .s:fg_magenta.s:bg_none
 
+if s:back == '234'
+	set background=dark
+endif
+
 " Extended highlighting
 " ---------------------------------------------------------------------
 exe "hi! SpecialKey"	.s:fmt_bold   .s:fg_base00 .s:bg_base02
